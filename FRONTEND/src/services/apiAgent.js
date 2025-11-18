@@ -1,6 +1,5 @@
-const base_url = "http://localhost:4000";
+const base_url = process.env.REACT_APP_API_URL;
 
 export const apiAgent = {
-  getCompanies: `${base_url}/api/companies/all/data `,
-}
- 
+  getCompanies: `${base_url}/api/companies/all/data`, 
+};
